@@ -9,9 +9,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    min-height: 100vh;
     text-align: center;
     overflow: hidden;
 }
@@ -117,36 +118,34 @@ button:hover {
 footer {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 0;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    max-width: 500px;
-    margin: 10px auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
 }
 
 footer p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 footer i {
     color: #ff6f61;
 }
 
-@media (max-width: 600px) {
-    form, #weatherInfo {
-        width: 90%;
-    }
-
+@media (max-width: 768px) {
     h1 {
         font-size: 2em;
+    }
+
+    form, #weatherInfo {
+        width: 90%;
+        max-width: 350px;
     }
 
     #weatherInfo h2 {
@@ -155,5 +154,28 @@ footer i {
 
     #weatherInfo p {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form, #weatherInfo {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    #weatherInfo h2 {
+        font-size: 1.3em;
+    }
+
+    #weatherInfo p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
     }
 }
