@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    background: url('./paul-csogi-wgLPy2YBXuc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 200% 200%;
-    animation: gradient 10s ease infinite;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -125,8 +132,6 @@ footer {
     width: 90%;
     max-width: 600px;
     margin: 20px auto;
-    position: relative;
-    bottom: 0;
 }
 
 footer p {
@@ -139,6 +144,12 @@ footer i {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: url('./Clouds\ in\ Blue\ Sky\ I\ -\ 8x10\ Unframed\ _\ Unframed.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     h1 {
         font-size: 2em;
     }
